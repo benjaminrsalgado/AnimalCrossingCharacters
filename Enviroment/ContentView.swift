@@ -10,41 +10,56 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            VistaPadre()
+           VistaPrincipal()
             
         }
 
     }
 }
 
-
-
-class ContadorGlobal: ObservableObject {
-    @Published var valor = 0
+class ViewModel: ObservableObject {
+    @Published var count = 0
+    
+    func plus(){
+        count += 1
+    }
 }
 
-struct VistaPadre: View{
-    @StateObject var share = ContadorGlobal()
+struct VistaPrincipal: View{
+    @StateObject var copia = ViewModel()
     var body: some View{
         VStack{
             VistaHija()
-                .environmentObject(share)
+            BotonView()
+               
         }
+        .environmentObject(copia)
     }
 }
 
 struct VistaHija: View{
-    @EnvironmentObject var share1: ContadorGlobal
+    @EnvironmentObject var copia : ViewModel
     var body: some View{
-        VStack{
-            Text("esto es \(share1.valor)")
-                .foregroundColor(.red)
-            Button("Sumar 1") {
-                           share1.valor += 1
-                       }
-        }
+        Text("Contador actual: \(copia.count)")
     }
 }
+
+struct BotonView:View{
+    @EnvironmentObject var copia : ViewModel
+    var body: some View{
+        VStack{
+            Button(action:{
+                copia.plus()
+            }){
+                Text("ahora es \(copia.count)")
+            }
+        }
+    }
+
+}
+
+
+
 
 #Preview {
     ContentView()
