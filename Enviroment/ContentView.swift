@@ -10,12 +10,39 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VistaPadre()
+            
         }
-        .padding()
+
+    }
+}
+
+
+
+class ContadorGlobal: ObservableObject {
+    @Published var valor = 0
+}
+
+struct VistaPadre: View{
+    @StateObject var share = ContadorGlobal()
+    var body: some View{
+        VStack{
+            VistaHija()
+                .environmentObject(share)
+        }
+    }
+}
+
+struct VistaHija: View{
+    @EnvironmentObject var share1: ContadorGlobal
+    var body: some View{
+        VStack{
+            Text("esto es \(share1.valor)")
+                .foregroundColor(.red)
+            Button("Sumar 1") {
+                           share1.valor += 1
+                       }
+        }
     }
 }
 
