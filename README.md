@@ -37,9 +37,4 @@ Una app simple y colorida inspirada en el universo de **Animal Crossing**, desar
 - ⭐ Marcado de personajes favoritos
 - 🎨 Personalización del fondo o temas
 
-## 📦 Instalación
-
-1. Clona este repositorio.
-2. Abre el proyecto con Xcode.
-3. Ejecuta en el simulador o tu dispositivo físico.
 
