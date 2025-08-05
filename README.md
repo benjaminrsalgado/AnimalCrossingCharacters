@@ -1,40 +1,48 @@
-# 🐾 Animal Crossing Cards
+# 🐾 Animal Crossing Characters App
 
-Una app simple y colorida inspirada en el universo de **Animal Crossing**, desarrollada con SwiftUI. Muestra una galería de personajes con tarjetas personalizadas.
+A visual catalog of popular Animal Crossing characters built with SwiftUI.  
+This project focuses on creating beautiful, responsive layouts using modern SwiftUI techniques.
 
-## ✨ Características actuales
+<img width="346" height="681" alt="App Screenshot" src="https://github.com/user-attachments/assets/77d4c70f-3ac0-499d-8a2f-3444f635c139" />
 
-- 📸 Imágenes de personajes
-- 🟦 Tarjetas con fondo pastel y diseño tipo Animal Crossing
-- 🌟 Interfaz limpia y adaptable
-- 🔤 Nombres visibles y diseño amigable
+---
 
-## 🛠️ Tecnologías usadas
+## ✨ Features
 
-- Swift 5
-- SwiftUI
-- Xcode
-- SF Symbols
-- Assets locales
+- 🧩 Grid layout using `LazyVGrid`
+- 🎨 Custom cards with background color per character
+- 🖼️ Character images, names and shadows
+- 📱 Fully responsive UI for iPhone
+- 🔄 State and data management with `@State` and `@Binding`
+- ☁️ Light animated background
 
-## 🧩 Estructura del proyecto
+---
 
-- `ContentView.swift`: Vista principal que contiene la grilla de personajes.
-- `Animal.swift`: Modelo que representa cada personaje (imagen, nombre, color, favorito).
-- `AnimalCard`: Vista reutilizable para mostrar cada personaje.
-- `AnimalCrossingBackground`: Fondo decorativo pastel que simula el estilo visual del juego.
+## 🚧 In Progress
 
-## 📱 Captura de pantalla
+This app is currently under development.
 
-<img width="346" height="681" alt="Captura de pantalla 2025-07-29 a la(s) 4 54 13 p m" src="https://github.com/user-attachments/assets/77d4c70f-3ac0-499d-8a2f-3444f635c139" />
+- [x] Basic layout and styling
+- [x] Character card view
+- [x] Scrollable grid
+- [ ] Add character descriptions
+- [ ] Implement detail view
+- [ ] Add favorite toggle with animation
+- [ ] Improve accessibility and dark mode
 
+---
 
-## 🚧 Próximas mejoras
+## 🛠 Technologies
 
-- 🔍 Buscador por nombre de personaje
-- 📝 Descripciones personalizadas
-- 📂 Menú de navegación con categorías
-- ⭐ Marcado de personajes favoritos
-- 🎨 Personalización del fondo o temas
+- 💻 Swift
+- 📱 SwiftUI
+- 🧠 MVVM-ready structure
+- 🧰 Xcode
 
+---
 
+## 📦 How to Run
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-username/animal-crossing-app.git
