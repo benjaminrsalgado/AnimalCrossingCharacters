@@ -45,4 +45,4 @@ This app is currently under development.
 
 1. Clone the repository  
    ```bash
-  git clone https://github.com/benjaminrsalgado/AnimalCrossingCharacters.git
+   git clone https://github.com/benjaminrsalgado/AnimalCrossingCharacters.git
